@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Education | My Personal Website</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #ffffff, #e0f7ff);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    h1 {
+      text-align: center;
+      color: #003366;
+      font-size: 2.2em;
+      margin: 30px 0 20px;
+    }
+
+    nav {
+      background-color: #d0e6ff;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #003366;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff6600;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .school-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 30px;
+    }
+
+    .school {
+      flex: 1 1 300px;
+      background-color: white;
+      text-align: center;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .school:hover {
+      transform: scale(1.02);
+    }
+
+    .school h2 {
+      color: #00509d;
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }
+
+    .school p {
+      font-size: 1em;
+      margin-bottom: 10px;
+    }
+
+    .school img {
+      width: 140px;
+      height: 140px;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 10px;
+    }
+
+    .school a.button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 18px;
+      background-color: #00509d;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+
+    .school a.button:hover {
+      background-color: #003366;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f0f8ff;
+      color: #666;
+      font-size: 0.95em;
+      margin-top: 40px;
+      border-top: 1px solid #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .school-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="experience.html">Work Experience</a>
+    <a href="education.html">Education</a>
+    <a href="family.html">Family</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h1>My Education Journey</h1>
+
+    <div class="school-grid">
+      <div class="school">
+        <h2>SK Seri Saujana</h2>
+        <p>My primary school where it all began.</p>
+        <img src="sk seri saujana.jpeg" alt="SK Seri Saujana Logo">
+        <br>
+        <a class="button" href="https://maps.app.goo.gl/6V8H1KQbu6b2XN5o7" target="_blank">📍 View Location</a>
+      </div>
+
+      <div class="school">
+        <h2>SMK Bandar Baru Seri Petaling</h2>
+        <p>My secondary school filled with amazing memories and growth.</p>
+        <img src="smk bbsp.jpeg" alt="SMK BBSP Logo">
+        <br>
+        <a class="button" href="https://maps.app.goo.gl/Dn9ACrS3yx3xUSnk8" target="_blank">📍 View Location</a>
+      </div>
+
+      <div class="school">
+        <h2>UiTM Rembau Campus</h2>
+        <p>Currently pursuing my higher education at UiTM Rembau.</p>
+        <img src="uitm.png" alt="UiTM Logo">
+        <br>
+        <a class="button" href="https://maps.app.goo.gl/JZs8aNa9tKEATx8f6" target="_blank">📍 View Location</a>
+      </div>
+    </div>
+  </div>
+
+   <footer>
+    <p>Created by Nurfarahanie binti Mohd Tarmizi | Matrix ID: 2023140577</p>
+    <p>This website is part of my Web Development assignment.</p>
+  </footer>
+
+</body>
+</html>
